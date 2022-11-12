@@ -20,7 +20,7 @@ const rateLimit = require("express-rate-limit");
 
 
 //Usar npm "helmet" para protejer la web un poco
-app.use(helmet());
+//app.use(helmet());
 // Servidor principal express
 app.use(express.json({ strict: false }));
 //Cargar index.html como / request tipo GET
@@ -30,33 +30,33 @@ app.get("/", (req, res) => {
 	render();
 });
 //Request tipo POST
-app.get("/tuurl", (req, res) => {
+app.get("/about", (req, res) => {
 	err = null;
-	res.sendFile(__dirname + "/www/tuhtml.html");
+	res.sendFile(__dirname + "/www/Acerca-de.html");
 	render();
 });
 //Request tipo POST
-app.get("/turul2", (req, res) => {
+app.get("/tienda", (req, res) => {
 	err = null;
-	res.sendFile(__dirname + "/www/tuhtml2.html");
+	res.sendFile(__dirname + "/www/Tienda.html");
 	render();
 });
 //Request tipo POST
-app.get("/tuurl3", (req, res) => {
+app.get("/contacto", (req, res) => {
 	err = null;
-	res.sendFile(__dirname + "/www/tuhtml.html");
+	res.sendFile(__dirname + "/www/Contacto.html");
 	render();
 });
 //Request tipo POST
-app.get("/tuurl4", (req, res) => {
+app.get("/portal", (req, res) => {
 	err = null;
-	res.sendFile(__dirname + "/www/tuhtml4.html");
+	res.sendFile(__dirname + "/www/luisnet-ingreso.html");
 	render();
 });
 //Request tipo POST
-app.get("/tuurlr5", (req, res) => {
+app.get("/uwu", (req, res) => {
 	err = null;
-	res.sendFile(__dirname + "/www/tuhtml5.html");
+	res.sendFile(__dirname + "/www/old.html");
 	render();
 });
 //Request tipo POST
