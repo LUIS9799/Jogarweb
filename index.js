@@ -4,10 +4,12 @@ const fs = require("fs"); //fs- npm i fs
 const path = require("path"); //path - npm i path
 const express = require("express"); //express- npm i express
 const http = require("http"); //http 
-const helmet = require("helmet"); //helmet npm i helmet
+//const helmet = require("helmet"); //helmet npm i helmet
+//Due to some issues with helmet, helmet is now deativated until they fix some general issues
 const app = express(); //definir express
 const server = http.createServer(app); //definir server
-const port = process.env.PORT || 8000; //definir puerto en este caso es 8080
+const port = 8000; //definir puerto en este caso es 8080
+//Fixed .env
 
 
 const rateLimit = require("express-rate-limit");
